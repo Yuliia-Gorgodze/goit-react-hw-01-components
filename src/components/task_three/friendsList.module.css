@@ -1,0 +1,29 @@
+.friend_list{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.item{
+    padding: 10px;
+}
+.name{
+    margin-bottom: 0;
+}
+.is_online{
+composes: item;
+background-color: green;
+color: #ffffff;
+border-radius: 5px;
+}
+.is_ofline{
+composes: item;
+background-color: red;
+color: #ffffff;
+border-radius: 5px;
+}

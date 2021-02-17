@@ -1,0 +1,30 @@
+.transaction_history{
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 450px;
+  text-align: center;
+}
+.type, .amount, .currency{
+  padding: 10px;
+}
+.type_head{
+  background-color: rgb(248, 158, 158);
+  padding: 15px;
+}
+.type{
+  background-color: rgb(255, 202, 202);
+}
+.amount{
+  background-color: rgb(158, 187, 248);
+}
+.amount_head{
+  padding: 15px;
+  background-color: rgb(120, 160, 247);
+}
+.currency{
+  background-color: rgb(183, 241, 171);
+}
+.currency_head{
+  padding: 15px;
+  background-color: rgb(138, 243, 117);
+}

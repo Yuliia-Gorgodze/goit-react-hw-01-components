@@ -1,0 +1,22 @@
+.statistics{
+    margin-right: auto;
+    margin-left: auto;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.stat_list{
+    display: flex;
+    background-color: grey;
+    padding: 10px;
+    justify-content: space-around;
+}
+.stat_list>li{
+    display: flex;
+    flex-direction: column;
+    
+}
+.label{
+    margin-bottom: 5px;
+    color: aliceblue;
+}

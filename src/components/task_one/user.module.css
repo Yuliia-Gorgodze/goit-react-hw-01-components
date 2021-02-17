@@ -1,0 +1,34 @@
+.profile{
+    padding: 10px;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.avatar{
+    width: 70px;
+    border-radius: 50%;
+}
+.stats{
+    height: 70px;
+    background-color: grey;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    border-radius: 5px;
+}
+.stats>li{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ffffff;
+    border-top: none;
+    border-bottom: none;
+    padding: 5px;
+}
+.label{
+    margin-bottom: 7px;
+}
