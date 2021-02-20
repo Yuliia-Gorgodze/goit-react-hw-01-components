@@ -2,6 +2,7 @@ import react from 'react';
 import propTypes from 'prop-types';
 import styles from './user.module.css'
 const User = ({name, tag, location, avatar, stats}) =>{
+  const {followers, views, likes}=stats;
     return (
         <div class={styles.profile}>
   <div class={styles.description}>
@@ -17,15 +18,15 @@ const User = ({name, tag, location, avatar, stats}) =>{
   <ul class={styles.stats}>
     <li>
       <span class={styles.label}>Followers</span>
-    <span class="quantity">{stats.followers}</span>
+    <span class="quantity">{followers}</span>
     </li>
     <li>
       <span class={styles.label}>Views</span>
-    <span class="quantity">"{stats.views}</span>
+    <span class="quantity">"{views}</span>
     </li>
     <li>
       <span class={styles.label}>Likes</span>
-    <span class="quantity">{stats.likes}</span>
+    <span class="quantity">{likes}</span>
     </li>
   </ul>
 </div>
@@ -36,5 +37,6 @@ User.propTypes = {
   tag: propTypes.string.isRequired,
   location: propTypes.string.isRequired,
   avatar: propTypes.string.isRequired,
+  stats: propTypes.object.isRequired
 }
 export default User;

@@ -1,31 +1,30 @@
 import react from 'react';
 import baseCss from './base.module.css';
-//task_one
-import user from './components/task_one/user.json';
-import User from './components/task_one/user';
-//task_two
-import Statistics from './components/task_two/Statistics'
-import statisticsInf from './components/task_two/statistics-data.json';
-//task_three
-import FriendList from './components/task_three/friendsList';
-import friendsListInf from './components/task_three/friends.json';
-//task_four
-import TransactionHistory from './components/task_four/transactionHistory';
-import transaction from './components/task_four/transaction.json';
+//components
+import User from './components/User/User';
+import Statistics from './components/Statistics/Statistics'
+import FriendList from './components/FriendsList/FriendsList';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+//data
+import user from './data/user.json';
+import statisticsInf from './data/statistics-data.json';
+import transaction from './data/transaction.json';
+import friendsListInf from './data/friends.json';
+
 const App = () => {
    return (
        <div>
-        <h2>Task One</h2>
+        <h2>User</h2>
          <User name={user.name}
   tag={user.tag}
   location={user.location}
   avatar={user.avatar}
   stats={user.stats} />
-        <h2>Task Two</h2>
+        <h2>Statistics</h2>
         <Statistics title="Upload stats" props={statisticsInf}/>
-        <h2>Task Three</h2>
+        <h2>Friends</h2>
         <FriendList friends={friendsListInf}/>
-        <h2>Task Four</h2>
+        <h2>Transaction History</h2>
         <TransactionHistory transaction={transaction}/>
        </div>    
   );
